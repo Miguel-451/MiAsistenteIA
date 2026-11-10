@@ -10,11 +10,14 @@ Este repositorio también documenta el aprendizaje y las decisiones técnicas to
 
 ## Estado actual
 
-**Fase:** preparación y fundamentos.  
+**Fase:** fundamentos de Python en curso.
+
 **Nivel inicial:** Python básico; experiencia previa con Java, C#, .NET, SQL y automatización con Python.  
 **Disponibilidad estimada:** 5-7 horas semanales.
 
-Todavía no se ha confirmado la instalación o el uso de Ollama ni la experiencia práctica con APIs REST.
+El usuario confirmó la instalación inicial del entorno de trabajo y la primera subida a GitHub. Se realizaron y revisaron ejercicios de variables, tipos, `input()`, condicionales, bucles `while` y `for`, y funciones con parámetros. Queda por consolidar el uso de `return`, el ámbito de las variables, las listas y los diccionarios.
+
+La próxima práctica es un gestor de conversaciones en memoria desde la consola. SQLite, las APIs REST, Ollama, la interfaz gráfica, la voz y la automatización del asistente siguen pendientes.
 
 ## Documentación
 
