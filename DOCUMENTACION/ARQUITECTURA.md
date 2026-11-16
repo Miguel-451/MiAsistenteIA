@@ -1,6 +1,16 @@
 # Arquitectura prevista
 
-**Estado:** borrador inicial. Esta arquitectura evolucionará a medida que se implementen y prueben los componentes.
+**Estado:** arquitectura objetivo en planificación; existe un primer gestor de conversaciones en consola, sin base de datos ni conexión a IA.
+
+## Implementación actual — consola (16/11/2026)
+
+- [`codigo/Conversaciones.py`](../codigo/Conversaciones.py) contiene un prototipo monolítico y pedagógico en Python.
+- El menú recibe datos con `input()` y llama a funciones de creación, búsqueda y mensajes.
+- Los datos residen en una lista de diccionarios; no hay persistencia al cerrar el programa.
+- Hay validación básica de identificadores (`try/except ValueError`), ID duplicado y conversación inexistente.
+- **No están implementados todavía** SQLite, Ollama, cliente LLM, interfaz gráfica, voz ni herramientas.
+
+La separación en módulos es un objetivo posterior; no confundir el esquema siguiente con arquitectura ya programada.
 
 ## 1. Idea general
 

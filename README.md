@@ -10,14 +10,21 @@ Este repositorio también documenta el aprendizaje y las decisiones técnicas to
 
 ## Estado actual
 
-**Fase:** fundamentos de Python en curso.
+**Fase:** primer gestor de conversaciones en consola completado (16/11/2026); comienza el aprendizaje de bases de datos relacionales y SQLite.
 
-**Nivel inicial:** Python básico; experiencia previa con Java, C#, .NET, SQL y automatización con Python.  
-**Disponibilidad estimada:** 5-7 horas semanales.
+El prototipo en [`codigo/Conversaciones.py`](codigo/Conversaciones.py) permite crear conversaciones, evitar IDs duplicados, añadir mensajes, listar y consultar el historial de una sesión mediante un menú interactivo. Incluye validación de identificadores con `try/except ValueError` y avisos para opciones y conversaciones inexistentes.
 
-El usuario confirmó la instalación inicial del entorno de trabajo y la primera subida a GitHub. Se realizaron y revisaron ejercicios de variables, tipos, `input()`, condicionales, bucles `while` y `for`, y funciones con parámetros. Queda por consolidar el uso de `return`, el ámbito de las variables, las listas y los diccionarios.
+**Limitación:** los datos se almacenan solo en memoria y desaparecen al cerrar el programa. **SQLite, APIs REST, Ollama, interfaz gráfica, voz y automatizaciones aún no están implementados.**
 
-La próxima práctica es un gestor de conversaciones en memoria desde la consola. SQLite, las APIs REST, Ollama, la interfaz gráfica, la voz y la automatización del asistente siguen pendientes.
+### Ejecutar el prototipo
+
+En una terminal, desde la raíz de este repositorio:
+
+```powershell
+python codigo/Conversaciones.py
+```
+
+No requiere dependencias externas para esta práctica.
 
 ## Documentación
 

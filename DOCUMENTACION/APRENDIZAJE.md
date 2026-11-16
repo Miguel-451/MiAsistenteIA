@@ -7,11 +7,11 @@ Los tiempos son orientativos. Avanzar cuando los conceptos se comprendan y pueda
 
 ## Bloque 1 — Fundamentos de Python
 
-**Estado:** en curso.
+**Estado:** primer prototipo práctico completado; fundamentos en consolidación.
 
-Se realizaron y revisaron ejercicios de variables y tipos, entrada con `input()`, condicionales, bucles `while` y `for`, y funciones con parámetros.
+Se han practicado variables y tipos, `input()`, condicionales, bucles `while` y `for`, funciones con parámetros y `return`, listas y diccionarios combinados, búsqueda de datos, `None` y manejo de `ValueError` con `try/except`. El gestor en consola ya utiliza estas técnicas conjuntamente.
 
-Se ha practicado un primer uso de `return` y se han hecho ejercicios básicos con listas y diccionarios. Queda por consolidar cómo reutilizar valores devueltos por una función, cómo funciona el ámbito de las variables y cómo combinar listas y diccionarios en un programa.
+Quedan por reforzar el ámbito de las variables, módulos, archivos, pruebas más amplias y otros aspectos del lenguaje; completar el prototipo no equivale a dominar todo Python.
 
 Temas:
 - Variables, tipos y operadores.
@@ -23,15 +23,22 @@ Temas:
 - Módulos, paquetes y entornos virtuales.
 - Clases, objetos, métodos y encapsulación.
 
-### Próxima práctica — gestor de conversaciones en memoria
+### Práctica completada — gestor de conversaciones en memoria (16/11/2026)
 
-- Crear un menú de consola con `while` para crear conversaciones, añadir mensajes a una conversación existente, listar las conversaciones, consultar sus mensajes y salir.
-- Guardar las conversaciones en una lista. Cada conversación puede ser un diccionario con un identificador, un título y su propia lista de mensajes. Los datos duran hasta que se cierra el programa.
-- Pasar la lista y el identificador a una función de búsqueda. Practicar `return` devolviendo la conversación encontrada o `None`, y usar ese resultado para decidir si se puede añadir o consultar un mensaje.
-- Probar con dos conversaciones y comprobar que cada una conserva sus propios mensajes. Revisar también qué ocurre al listar una colección vacía o introducir un identificador inexistente.
+Código: [`codigo/Conversaciones.py`](../codigo/Conversaciones.py).
 
-Criterio de salida:
-- Poder explicar y modificar el programa sin depender de copiar una solución completa.
+- Menú con `while`: crear conversación, añadir mensaje, listar conversaciones, mostrar mensajes y salir.
+- Lista de diccionarios con `id`, `titulo` y lista independiente de `mensajes`.
+- Funciones para crear, buscar, añadir mensajes y consultar; `buscarConversacion()` devuelve un diccionario o `None`.
+- Prevención de IDs duplicados; comprobación de conversación inexistente o vacía.
+- `pedir_entero()` gestiona `ValueError`; el menú evita operar con `None` y comunica opciones inválidas.
+- Pruebas manuales comunicadas: crear conversación ID 1, añadir dos mensajes (`hola`, `adios`), leerlos en orden, listar, consultar ID 99, introducir letras como identificador en opciones 1/2/4 y salir.
+
+**Pendiente de consolidar:** probar todos los casos extremos, mejorar la presentación y practicar el funcionamiento de las referencias, el ámbito y las excepciones. Los mensajes siguen almacenándose solo durante la ejecución.
+
+**Siguiente paso:** Bloque 2 — tablas, relaciones y operaciones básicas con SQLite, antes de conectar un LLM.
+
+Criterio de salida de la práctica: **alcanzado para el prototipo básico**, sujeto a repaso y ampliaciones.
 
 ## Bloque 2 — Bases de datos y SQLite
 

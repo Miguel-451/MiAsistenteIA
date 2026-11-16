@@ -1,8 +1,20 @@
 # Documento maestro — MiAsistenteIA
 
-**Versión del documento:** 1.0  
-**Estado:** planificación inicial  
-**Última actualización:** 2026-11-05
+- **Versión del documento:** 1.1
+- **Estado:** primer prototipo de consola completado. El asistente de IA sigue en planificación.
+- **Fecha de referencia del avance:** 16/11/2026
+
+## Estado de implementación — 16/11/2026
+
+Se ha completado una primera práctica funcional **sin modelo de IA**: [`codigo/Conversaciones.py`](../codigo/Conversaciones.py).
+
+- Crear conversaciones con identificador único y título.
+- Añadir mensajes de texto a una conversación existente.
+- Buscar, listar y consultar conversaciones y mensajes mediante un menú de consola.
+- Tratar identificadores no numéricos con `try/except ValueError` y evitar operaciones con `None`.
+- Comprobar el comportamiento con entradas válidas e inválidas en pruebas manuales.
+
+**Alcance:** los datos se guardan en memoria durante la ejecución. SQLite, las APIs REST, Ollama, la interfaz gráfica, la voz y la automatización siguen pendientes.
 
 ## 1. Visión general
 
@@ -130,6 +142,6 @@ Una fase se considera completada cuando el usuario puede explicar el funcionamie
 
 ## 10. Próximo objetivo
 
-**Objetivo inmediato:** comenzar los fundamentos de Python y diseñar por consola un pequeño gestor de conversaciones usando estructuras en memoria (listas y diccionarios).
+**Objetivo inmediato:** repasar el prototipo del gestor de conversaciones y comenzar fundamentos de bases de datos relacionales y SQLite.
 
-Después se añadirá SQLite para comprender qué aporta una base de datos antes de conectar un modelo de IA.
+Diseñar tablas `conversaciones` y `mensajes`, relacionarlas y aprender operaciones básicas para guardar y recuperar el historial entre ejecuciones. La persistencia todavía no está implementada.

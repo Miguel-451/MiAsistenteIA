@@ -4,7 +4,7 @@ Registrar aquí decisiones relevantes, su motivo y si siguen vigentes.
 
 ## D-001 — Python como lenguaje principal inicial
 
-- **Estado:** provisional, aceptada para el prototipo.
+- **Estado:** aceptada para el prototipo de consola; revisable en etapas posteriores.
 - **Decisión:** utilizar Python para la primera versión.
 - **Motivo:** ecosistema amplio para IA local, automatización y prototipado.
 - **Alternativas consideradas:** C#/.NET para la aplicación completa o una arquitectura mixta.
@@ -18,7 +18,7 @@ Registrar aquí decisiones relevantes, su motivo y si siguen vigentes.
 
 ## D-003 — SQLite para persistencia inicial
 
-- **Estado:** propuesta.
+- **Estado:** propuesta, próxima etapa de aprendizaje; no implementada.
 - **Motivo:** almacenamiento local sencillo, sin necesidad de administrar un servidor de base de datos.
 - **Condición:** aprender primero los fundamentos relacionales y SQL.
 
@@ -28,6 +28,13 @@ Registrar aquí decisiones relevantes, su motivo y si siguen vigentes.
 - **Motivo:** permite desarrollar una interfaz de escritorio con Python.
 - **Alternativas:** WPF con C#/.NET.
 - **Revisión:** elegir definitivamente cuando llegue el bloque de interfaz.
+
+## D-005 — Primer gestor en memoria antes de persistencia
+
+- **Estado:** aplicada al prototipo pedagógico (16/11/2026).
+- **Decisión:** practicar el gestor de conversaciones con una lista de diccionarios y funciones antes de incorporar una base de datos.
+- **Motivo:** consolidar estructuras de datos, reutilización de funciones, `return`, `None` y validación de entradas.
+- **Consecuencia:** los datos se pierden al terminar el proceso; SQLite queda como siguiente bloque.
 
 ## Plantilla de decisión
 
